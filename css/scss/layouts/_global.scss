@@ -1,0 +1,20 @@
+// Global Rules
+* {
+    box-sizing: border-box;
+}
+// End of Global Rules
+
+// Container
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1199.98px) {
+    .container {
+        width: calc(100% - 80px);
+    }
+}
+// End of Container

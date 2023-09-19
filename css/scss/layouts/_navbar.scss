@@ -1,0 +1,40 @@
+// Navbar
+.navbar {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    // Content
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // Image
+        .image {
+            width: 135px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        // Links
+        .links{
+            ul {
+                list-style: none;
+                li {
+                    display: inline-block;
+                    margin: 0;
+                    a {
+                        font-size: 15px;
+                        text-decoration: none;
+                        text-transform: capitalize;
+                    }
+                    &:nth-child(2) {
+                        padding-left: 2rem;
+                        padding-right: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+//End of navbar

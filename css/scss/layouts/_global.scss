@@ -2,6 +2,9 @@
 * {
     box-sizing: border-box;
 }
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 // End of Global Rules
 
 // Container
@@ -10,11 +13,12 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    width: calc(100% - 80px);
 }
 
-@media (min-width: 1199.98px) {
+@media (max-width: 767.98px) {
     .container {
-        width: calc(100% - 80px);
+        width: calc(100% - 30px);
     }
 }
 // End of Container

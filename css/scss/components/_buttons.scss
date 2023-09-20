@@ -1,0 +1,16 @@
+// Form Button
+.btn {
+    cursor: pointer;
+    padding: 10px 30px;
+    border: 1px solid $bright-blue;
+    color: $light-grayish-blue;
+    background-color: $bright-blue;
+    border-radius: 4px;
+    transition: all .25s ease-in;
+    &:hover {
+        border-color: hsl(224deg 93% 58% / 80%);
+        background-color: hsl(224deg 93% 58% / 80%);
+
+    }
+}
+// End of Form Button

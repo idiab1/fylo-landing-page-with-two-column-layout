@@ -32,6 +32,10 @@
                             width: calc(100% - 235px);
                             border-radius: 4px;
                             border: 1px solid #000;
+                            &:focus {
+                                border: none;
+                                outline: none;
+                            }
                         }
                     }
                 }

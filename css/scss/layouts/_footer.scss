@@ -112,5 +112,40 @@
         }
     }
 }
+// End of Copyrights
 
- // End of Copyrights
+@media (max-width: 767.98px) {
+    // Footer
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        // Image 
+        .image {
+            width: 135px;
+            padding-bottom: 15px;
+        }
+        // Row
+        .row {
+            justify-content: flex-start;
+            flex-direction: column;
+            // Box
+            .box {
+                ul {
+                    padding: 0;
+                    margin-top: 1.3rem;
+                    margin-bottom: 1.3rem;
+                    li{
+                        a{
+                            font-size: 15px;
+                        }
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // End of Footer
+
+}

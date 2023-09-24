@@ -24,9 +24,10 @@
                 color: $moderate-cyan;
                 border-bottom: 1px solid $moderate-cyan;
                 padding-bottom: 5px;
-                // img {
-
-                // }
+                &:hover {
+                    color: hsl(170deg 45% 43% / 80%);
+                    border-bottom: 1px solid hsl(170deg 45% 43% / 80%);
+                }
             }
             // Card
             .card {

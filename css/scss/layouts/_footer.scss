@@ -1,124 +1,130 @@
 // Footer
 .footer {
-    padding-top: 90px;
-    padding-bottom: 90px;
     background-color: $very-dark-blue;
-    // Image 
-    .image {
-        width: 150px;
-        padding-bottom: 20px;
-        img {
-            width: 100%;
-            height: 100%;
+    // Footer Links
+    .footer-links {
+        padding-top: 90px;
+        padding-bottom: 90px;
+        // Image 
+        .image {
+            width: 150px;
+            padding-bottom: 20px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
-    }
-    // Row
-    .row {
-        display: flex;
-        justify-content: space-between;
-        // Box
-        .box {
-            ul {
-                padding: 0;
-            }
-            // Address info
-            &.address-info {
+        // Row
+        .row {
+            display: flex;
+            justify-content: space-between;
+            // Box
+            .box {
                 ul {
-                    li {
-                        display: flex;
-                        align-items: center;
-                        padding-bottom: 20px;                    
-                        // icon 
-                        .icon {
-                            // display: inline-block;
-                            padding-right: 20px;
-                        }
-                        p {
-                            color: #fff;
-                            margin: 0;
-                        }
-                    }
+                    padding: 0;
                 }
-            }
-
-            // Links
-            &.links {
-                ul {
-                    li {
-                        padding-bottom: 17px;
-                        a {
-                            color: #fff;
-                            transition: all .25s ease-in;
-                            &:hover {
-                                color: $desaturated-blue;
+                // Address info
+                &.address-info {
+                    ul {
+                        li {
+                            display: flex;
+                            align-items: center;
+                            padding-bottom: 20px;                    
+                            // icon 
+                            .icon {
+                                // display: inline-block;
+                                padding-right: 20px;
+                            }
+                            p {
+                                color: #fff;
+                                margin: 0;
                             }
                         }
-                        &:last-child {
-                            padding-bottom: 0;
-                        }
                     }
                 }
-            }
-           
-            // Social Media
-            &.social-media {
-                ul {
-                    li {
-                        display: inline-block;
-                        div {
-                            width: 35px;
-                            height: 35px;
-                            border: 1px solid #fff;
-                            line-height: 35px;
-                            text-align: center;
-                            border-radius: 50%;
-                            transition: all .25s ease-in;
+    
+                // Links
+                &.links {
+                    ul {
+                        li {
+                            padding-bottom: 17px;
                             a {
                                 color: #fff;
-                                display: block;
                                 transition: all .25s ease-in;
-                            }
-                            &:hover {
-                                border: 1px solid $desaturated-blue;
-                                a {
+                                &:hover {
                                     color: $desaturated-blue;
                                 }
                             }
+                            &:last-child {
+                                padding-bottom: 0;
+                            }
                         }
-                        &:nth-child(2) {
-                            padding-left: 10px;
-                            padding-right: 10px;
+                    }
+                }
+               
+                // Social Media
+                &.social-media {
+                    ul {
+                        li {
+                            display: inline-block;
+                            div {
+                                width: 35px;
+                                height: 35px;
+                                border: 1px solid #fff;
+                                line-height: 35px;
+                                text-align: center;
+                                border-radius: 50%;
+                                transition: all .25s ease-in;
+                                a {
+                                    color: #fff;
+                                    display: block;
+                                    transition: all .25s ease-in;
+                                }
+                                &:hover {
+                                    border: 1px solid $desaturated-blue;
+                                    a {
+                                        color: $desaturated-blue;
+                                    }
+                                }
+                            }
+                            &:nth-child(2) {
+                                padding-left: 10px;
+                                padding-right: 10px;
+                            }
                         }
                     }
                 }
             }
         }
     }
+    // Copyrights
+    .copyrights {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-top: 1px solid $light-grayish-blue;
+        background-color: $very-dark-blue;
+       p{
+           color: #fff;
+           font-size: 15px;
+           a {
+               color: $moderate-cyan;
+           }
+       }
+    }
+    // End of Copyrights
 }
 // End of Footer
 
- // Copyrights
- .copyrights {
-     text-align: center;
-     padding-top: 15px;
-     padding-bottom: 15px;
-     border-top: 1px solid $light-grayish-blue;
-     background-color: $very-dark-blue;
-    p{
-        color: #fff;
-        font-size: 15px;
-        a {
-            color: $moderate-cyan;
-        }
-    }
-}
-// End of Copyrights
 
 @media (max-width: 767.98px) {
     // Footer
     .footer {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        // Footer Links
+        .footer-links {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
         // Image 
         .image {
             width: 135px;

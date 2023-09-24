@@ -228,6 +228,92 @@ a {
     width: 100%;
   }
 }
+.testimonials {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: hsl(240deg, 75%, 98%);
+}
+.testimonials .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+}
+.testimonials .row .info h2 {
+  margin-top: 0;
+  line-height: 1.5;
+  font-size: 2.3rem;
+  margin-bottom: 1.2rem;
+}
+.testimonials .row .info p {
+  font-size: 17px;
+  line-height: 1.5;
+}
+.testimonials .row .info a {
+  color: hsl(170deg, 45%, 43%);
+  border-bottom: 1px solid hsl(170deg, 45%, 43%);
+  padding-bottom: 5px;
+}
+.testimonials .row .info .card {
+  padding: 1.5rem 2rem;
+  width: 390px;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  margin-top: 9%;
+  margin-bottom: 10%;
+}
+.testimonials .row .info .card .card-body p {
+  font-size: 16px;
+  line-height: 1.65;
+  margin-top: 0.5rem;
+}
+.testimonials .row .info .card .card-footer {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+.testimonials .row .info .card .card-footer .image {
+  width: 45px;
+  height: 45px;
+}
+.testimonials .row .info .card .card-footer .image img {
+  border-radius: 50%;
+}
+.testimonials .row .info .card .card-footer .user-info {
+  padding-left: 1rem;
+}
+.testimonials .row .info .card .card-footer .user-info h3 {
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+  font-size: 1.15rem;
+}
+.testimonials .row .info .card .card-footer .user-info p {
+  margin: 0;
+  font-size: 14px;
+}
+.testimonials .row .image img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .curve-desktop {
+    display: block;
+    margin-bottom: -10px;
+  }
+  .curve-desktop img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .curve-mobile {
+    display: none;
+  }
+  .curve-mobile img {
+    margin-top: 3rem;
+    width: 100%;
+    margin-bottom: -10px;
+  }
+}
 .contact {
   padding-top: 50px;
   padding-bottom: 50px;

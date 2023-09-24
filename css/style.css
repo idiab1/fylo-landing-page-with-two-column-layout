@@ -253,6 +253,10 @@ a {
   border-bottom: 1px solid hsl(170deg, 45%, 43%);
   padding-bottom: 5px;
 }
+.testimonials .row .info a:hover {
+  color: hsla(170deg, 45%, 43%, 0.8);
+  border-bottom: 1px solid hsla(170deg, 45%, 43%, 0.8);
+}
 .testimonials .row .info .card {
   padding: 1.5rem 2rem;
   width: 390px;
@@ -295,7 +299,7 @@ a {
   width: 100%;
 }
 
-@media only screen and (min-width: 1000px) {
+@media (min-width: 1000px) {
   .curve-desktop {
     display: block;
     margin-bottom: -10px;
@@ -303,15 +307,59 @@ a {
   .curve-desktop img {
     width: 100%;
   }
-}
-@media only screen and (min-width: 1000px) {
+
   .curve-mobile {
     display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .curve-desktop {
+    display: none;
+  }
+
+  .curve-mobile {
+    display: block;
   }
   .curve-mobile img {
     margin-top: 3rem;
     width: 100%;
     margin-bottom: -10px;
+  }
+}
+@media (max-width: 767.98px) {
+  .testimonials .row {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 0%;
+  }
+  .testimonials .row .info h2 {
+    font-size: 1.85rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .testimonials .row .info p {
+    text-align: left;
+  }
+  .testimonials .row .info .card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .testimonials .row .info .card .card-body {
+    text-align: left;
+  }
+  .testimonials .row .info .card .card-body p {
+    font-size: 16px;
+    line-height: 1.65;
+    margin-top: 0.5rem;
+  }
+  .testimonials .row .info .card .card-footer .image {
+    width: 40px;
+    height: 40px;
+  }
+  .testimonials .row .info .card .card-footer .user-info {
+    text-align: left;
   }
 }
 .contact {

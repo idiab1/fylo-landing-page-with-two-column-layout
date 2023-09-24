@@ -86,7 +86,7 @@
 }
 // End of Testimonials
 
-@media only screen and (min-width: 1000px)
+@media (min-width: 1000px)
 {
     .curve-desktop {
         display: block;
@@ -95,11 +95,17 @@
             width: 100%;
         }
     }
-}
-
-@media only screen and (min-width: 1000px) {
     .curve-mobile {
         display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .curve-desktop {
+        display: none;
+    }
+    .curve-mobile {
+        display: block;
         img {
             margin-top: 3rem;
             width: 100%;
@@ -107,3 +113,57 @@
         }
     }
 }
+
+@media (max-width: 767.98px) {
+    // Testimonials
+    .testimonials {
+        // Row
+        .row {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            text-align: center;
+            gap: 0%;
+            // Info
+            .info {
+                h2 {
+                    font-size: 1.85rem;
+                    margin-top: 1.2rem;
+                    margin-bottom: 1.2rem;
+                }
+                p {
+                    text-align: left;
+                }
+                // Card
+                .card {
+                    margin-left: auto;
+                    margin-right: auto;
+                    // Card Body 
+                    .card-body {
+                        text-align: left;
+                        p{
+                            font-size: 16px;
+                            line-height: 1.65;
+                            margin-top: .5rem;
+                        }
+                    }
+                    // Card Footer
+                    .card-footer {
+                        // Image 
+                        .image {
+                            width: 40px;
+                            height: 40px;                    
+                        }
+                        // User Info 
+                        .user-info {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    // End of Testimonials
+}
+

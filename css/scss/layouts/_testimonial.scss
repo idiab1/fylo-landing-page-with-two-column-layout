@@ -1,0 +1,108 @@
+// Testimonials
+.testimonials {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $light-grayish-blue;
+    // Row
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5%;
+        // Info
+        .info {
+            h2 {
+                margin-top: 0;
+                line-height: 1.5;
+                font-size: 2.3rem;
+                margin-bottom: 1.2rem;
+            }
+            p {
+                font-size: 17px;
+                line-height: 1.5;
+            }
+            a{
+                color: $moderate-cyan;
+                border-bottom: 1px solid $moderate-cyan;
+                padding-bottom: 5px;
+                // img {
+
+                // }
+            }
+            // Card
+            .card {
+                padding: 1.5rem 2rem;
+                width: 390px;
+                background-color: #fff;
+                box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 25%);
+                border-radius: 4px;
+                margin-top: 9%;
+                margin-bottom: 10%;
+                // Card Body 
+                .card-body {
+                    p{
+                        font-size: 16px;
+                        line-height: 1.65;
+                        margin-top: .5rem;
+                    }
+                }
+                // Card Footer
+                .card-footer {
+                    display: flex;
+                    align-items: center;
+                    padding-top: 10px;
+                    // Image 
+                    .image {
+                        width: 45px;
+                        height: 45px;                    
+                        img {
+                            border-radius: 50%;
+                        }
+                    }
+                    // User Info 
+                    .user-info {
+                        padding-left: 1rem;
+                        h3 {
+                            margin-top: 0;
+                            margin-bottom: .2rem;
+                            font-size: 1.15rem;
+                        }
+                        p {
+                            margin: 0;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        // image
+        .image {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+// End of Testimonials
+
+@media only screen and (min-width: 1000px)
+{
+    .curve-desktop {
+        display: block;
+        margin-bottom: -10px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .curve-mobile {
+        display: none;
+        img {
+            margin-top: 3rem;
+            width: 100%;
+            margin-bottom: -10px;
+        }
+    }
+}
